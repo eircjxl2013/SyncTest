@@ -5,10 +5,10 @@ public class MDIInputModule : MonoBehaviour {
 	ControlPanel Main;
 	CooSystem CooSystem_script;
 	
-	//增加一个新的变量
-	private int syncTest = 1;
+	//这里删除了一个变量
 	
-	
+	//这里增加了一个变量
+	private float SyncTestFloat = 0;
 	
 	// Use this for initialization
 	//宋荣
@@ -23,12 +23,6 @@ public class MDIInputModule : MonoBehaviour {
 	
 	public void MDIInput ()
 	{
-		//MDI面板输入区		
-		if (GUI.Button(new Rect(600f/1000f*Main.width, 30f/1000f*Main.height, 50f/1000f*Main.width, 50f/1000f*Main.height), "p O"))            
-		{
-			if(Main.ScreenPower)
-				LetterInput("O");
-		}
 		
 		if (GUI.Button(new Rect(660f/1000f*Main.width, 30f/1000f*Main.height, 50f/1000f*Main.width, 50f/1000f*Main.height), "q N"))            
 		{
@@ -362,6 +356,12 @@ public class MDIInputModule : MonoBehaviour {
 			}
 		}
 	    //宋荣
+		//MDI面板输入区		
+		if (GUI.Button(new Rect(600f/1000f*Main.width, 30f/1000f*Main.height, 50f/1000f*Main.width, 50f/1000f*Main.height), "p O"))            
+		{
+			if(Main.ScreenPower)
+				LetterInput("O");
+		}
 	}
 	
 	// Update is called once per frame
