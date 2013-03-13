@@ -5,7 +5,15 @@ public class MDIInputModule : MonoBehaviour {
 	ControlPanel Main;
 	CooSystem CooSystem_script;
 	
+<<<<<<< HEAD
 	//这里删除了一个变量
+====private int syncTest = 0;===
+	//add a bool
+	private bool add;
+	//增加一个新的变量
+	private int syncTest = 1;
+	
+>>>>>>> 022b04e7a9de688cb90176364d9570cdc3b42b88
 	
 	//这里增加了一个变量
 	private float SyncTestFloat = 0;
