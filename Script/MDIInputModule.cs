@@ -4,6 +4,12 @@ using System.Collections;
 public class MDIInputModule : MonoBehaviour {
 	ControlPanel Main;
 	CooSystem CooSystem_script;
+	
+	//增加一个新的变量
+	private int syncTest = 1;
+	
+	
+	
 	// Use this for initialization
 	//宋荣
 	public bool isXSelected;//相对或综合pos下X键是否按下；
