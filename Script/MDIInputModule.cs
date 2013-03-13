@@ -5,6 +5,8 @@ public class MDIInputModule : MonoBehaviour {
 	ControlPanel Main;
 	CooSystem CooSystem_script;
 	
+	//add a bool
+	private bool add;
 	//增加一个新的变量
 	private int syncTest = 1;
 	
